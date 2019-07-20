@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com;style-src * 'unsafe-inline' 'self' data: * blob: *;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;img-src * data: blob: 'unsafe-inline' 'self' content:;media-src mediastream;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>True Random Image Blockchain Artifcial Intelligence Security System</title>
+        <link rel='shortcut icon' type='image/x-icon' href='img/car_icon.jpg' />
+        
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/car_icon.jpg" alt="Vehicle_Damage_Analyzerlogo">
+            <h1>True Random Image Blockchain Artifcial Intelligence Security System</h1>
+        </header>
+    </body>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/seedrandom.js"></script>
+    <script type="text/javascript" src="js/w3w.js"></script>
+
+   
+    <main>
+
+        <form enctype="multipart/form-data" action="../uploadpic" target="mytarget" method="POST">
+            <h3>1.</h3>
+            <h4>Input your desired random number range:</h4>
+            <p>From</p><input onchange="possibilities()" name="fromNum" type="number" id="fromNum" class="number" />
+            <p>To</p><input onchange="possibilities()" name="toNum" type="number" id="toNum" class="number" />
+            <!--<button onclick="possibilities()">Refresh</button>-->
+            <p id="possibilities">Possibilities: </p>
+        </br>
+            <h3>2.</h3>
+            <h4>Upload a photo of someting:</h4>
+            <input name="myPhoto" type="file" id="foo" class="filebutton" />
+            <input type="submit" value="Analyse Image" class="filebutton" />
+            <img id="imagePreview" src="#" style="display: none;" />
+            <iframe id="mytarget" name="mytarget" style="width:0; height:0; border:0; border:none" src=""></iframe>
+        
+            <article></article>
+        
+        </br>
+        </br>
+        </br>
+            <h3>3.</h3>
+            <h4>Check for duplicates on blockchain:</h4>
+            <button id="certify" onclick="testDuplicate()" class="filebutton">Certify Image</button>
+            <img id="loading" src="img/loading.jpg" style="width: 400px; display: none;"/>
+            <p id="base64Text2" style="display: none; color:green;">Image is a certfied orginal, image code:</p>
+            <p id="base64Text" style="display: none; width: 400px; height: 200px; overflow: auto; word-wrap: break-word;"></p>
+            </br>
+            </br>
+            </br>
+            <h3>4.</h3>
+            <h4>True random number result:</h4>
+            <button  onclick="retrieveRan()" class="filebutton">Retrieve Number</button>
+            <h1 id="retrieveRan" style="font-weight: bold;  display: block; font-family:Georgia, 'Times New Roman', Times, serif"></h1>
+            </br>
+            <p>To remember your number; remember these three words:</p>
+            <table style="width:400px; text-align: center;">
+                <tr>
+                    <th style="text-align: center"><p id="w3w1"></p></td>
+                    <th style="text-align: center"><p id="w3w2"></p></td>
+                    <th style="text-align: center"><p id="w3w3"></p></td>
+                </tr>
+            </table>
+    </br style="block;">
+    </br>
+    </br>
+
+    <h3>OR</h3>
+            <h4>Recall a previous random number:</h4>
+            <h5>1.</h5>
+            <p>Which three words do you remember?</p>
+            <input type="text"/><input type="text"/><input type="text"/>
+            <button  onclick="generate3Desc()" class="filebutton">I remember these</button>
+        </br style="block;">
+    <h5>2.</h5>
+    <p>Which is the best description of the image you used?</p>
+    <p style="color:red">(You only have one oppurtunity select correctly)</p>
+
+            <table style="display: block; text-align: center; width: 400px; max-height: 200px; overflow: auto; word-wrap: break-word;">
+                <tr>
+                    <td class="desc" style="text-align: center; width:200px"><p id="desc1"></p></td>
+                    <td class="desc" style="text-align: center; width:200px"><P id="desc2"></P></td>
+                    <td class="desc" style="text-align: center; width:200px"><p id="desc3"></p></td>
+                </tr>
+                <tr>
+                        <td style="width:200px; text-align: center"><input type="radio" name="descOption"/></td>
+                        <td style="width:200px; text-align: center"><input type="radio" name="descOption"/></td>
+                        <td style="width:200px; text-align: center"><input type="radio" name="descOption"/></td>
+                    </tr>
+            </table>
+            <button  onclick="checkDesc()" class="filebutton">I select this one</button>
+            <p id="wrong" style="display: none">You have selected incorrectly will not be able to retrieve you number again.</p>
+            <p id="right" style="display: none">You have selected correctly, here is your ogriginal random number:</p>
+            <h1 id="retrieveRem" style="display: block; font-weight: bold; font-family:Georgia, 'Times New Roman', Times, serif"></h1>
+            </br>
+
+        </br>
+        
+    </form>       
+        
+        
+
+    </main>
+    <footer>
+            
+    </footer>
+
+</html>
